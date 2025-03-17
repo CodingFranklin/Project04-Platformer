@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 [RequireComponent (typeof (Controller2D))]
@@ -89,6 +89,10 @@ public class Player : MonoBehaviour {
 		if (velocity.y > minJumpVelocity) {
 			velocity.y = minJumpVelocity;
 		}
+	}
+
+	public void setVelocityY(float y){
+		velocity.y = y;
 	}
 		
 
